@@ -5,7 +5,7 @@ So this is to be able to work on some netsuite stuff.
 
 In this we're following a guide set by Robin Mitchell.
 
-Essentially, we install the suitebundle "head in the cloud upload resetlet" which to my knowledge just comes with Netsuite.
+Essentially, we install the suitebundle "head in the cloud upload resetlet" which to my knowledge just comes with Netsuite kind of. It has to be installed.
 
 Next, in our coding space, we want NPM and Gulp.
 
