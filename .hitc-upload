@@ -1,0 +1,9 @@
+{
+  "accounts": [
+    {
+      "name": "Production",
+      "companyId": "dummy",
+      "cabinetPath": "/SuiteScripts"
+    }
+  ]
+}
