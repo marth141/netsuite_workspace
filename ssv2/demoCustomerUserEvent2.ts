@@ -11,16 +11,19 @@ import log = require('N/log');
 import https = require('N/https');
 
 export function afterSubmit(context: EntryPoints.UserEvent.afterSubmitContext) {
-    var headerObj = {
-        'Content-Type': 'application/json',
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'host': 'e86c-66-111-121-28.ngrok.io'
-    };
-    var response = https.post({
-        url: 'https://e86c-66-111-121-28.ngrok.io/hookmon/netsuite',
-        body: JSON.stringify("punk"),
-        headers: headerObj
-    });
-    log.debug('After Submit', `${context.type} record ${context.newRecord.id}.`);
+  https.post({
+    url: 'https://e86c-66-111-121-28.ngrok.io/hookmon/netsuite',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': '*/*',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'host': 'e86c-66-111-121-28.ngrok.io'
+    },
+    body: JSON.stringify({
+      "newRecord": context.newRecord,
+      "oldRecord": context.oldRecord,
+      "type": context.type
+    })
+  });
+  log.debug('After Submit', `${context.type} record ${context.newRecord.id}.`);
 }
