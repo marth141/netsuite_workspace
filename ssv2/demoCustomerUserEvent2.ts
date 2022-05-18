@@ -12,7 +12,7 @@ import https = require('N/https');
 
 export function afterSubmit(context: EntryPoints.UserEvent.afterSubmitContext) {
   https.post({
-    url: 'https://e86c-66-111-121-28.ngrok.io/hookmon/netsuite',
+    url: 'https://e86c-66-111-121-28.ngrok.io/hookmon/netsuite_user_event',
     headers: {
       'Content-Type': 'application/json',
       'Accept': '*/*',
