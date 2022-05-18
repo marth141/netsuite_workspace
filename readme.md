@@ -13,11 +13,13 @@ Then we make our gulp file, our tsconfig.json, our "Head in the Cloud" (HITC) up
 
 And after this we can be able to upload with `gulp build-and-upload --file "ssv2/myfile.ts"`
 
-Only stuff in the `ssv2` folder will get built and uploaded.
+Only stuff in the `ssv2` folder will get built and uploaded. This is just the way. Try different, I dare you.
 
 Netsuite stuff can be written with TypeScript in this way.
 
 ## Sources
+https://github.com/BKnights/netsuite-types
+
 https://www.youtube.com/watch?v=Wf_z7IpTaJU
 
 https://www.youtube.com/watch?v=S8GjmfoL6nY&t=172s
